@@ -33,7 +33,7 @@ function linkedList(arr) {
   );
 }
 
-module.exports = function removeKFromList(l, k) {
+function removeKFromList(l, k) {
   if (!l) {
     return 0;
   }
@@ -44,4 +44,8 @@ module.exports = function removeKFromList(l, k) {
   }
   arr = arr.filter((el) => el !== k);
   return linkedList(arr);
+}
+
+module.exports = {
+  removeKFromList,
 };
